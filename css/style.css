@@ -1,0 +1,374 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-size: 62.5%;
+  background-image: url(../images/backgroundLarge.png);
+  background-size: 260vh;
+  /*background-size: 100%;*/
+
+}
+
+header {
+  padding: 0;
+  margin: 0;
+  margin-right: 0;
+}
+
+.navIcon {
+  width: 3rem;
+}
+
+.websiteContainer {
+  min-width: 70%;
+  height: 75vh;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 8%;
+  padding-right: 0;
+  background-image: url(../images/backgroundMedium.jpg);
+  background-size: 150vh;
+
+}
+
+nav {
+  width: 66%;
+  height: 3rem;
+  margin-left: 34%;
+  padding-top: 1rem;
+}
+
+nav ul > li  {
+  float:left;
+  padding-right: 3rem;
+  font-size: 1.6rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+.mainContainer {
+  /*border: 3px solid lime;*/
+  width: 50%;
+  margin-left: 7rem;
+  margin-top: 9rem;
+}
+
+.mainContainer h1 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.mainContainer form {
+  margin-top: 0;
+}
+
+.icon {
+  padding-left: 2.5rem;
+  background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+  background-size: 2rem;
+  
+}
+
+.mainContainer input {
+  height: 3.5rem;
+  width: 30rem;
+  background-color: white;
+  border: 0.1rem solid lightgray;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+input::placeholder {
+  font-size: 1.5rem;
+}
+
+.mainContainer a {
+  text-decoration: none;
+  padding: 0.65rem 3rem 1.05rem 3rem;
+  margin-left: -0.25rem;
+  background-color: orange;
+  font-size: 1.5rem;
+  margin-top: 10rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+}
+
+.mainContainer ul {
+  padding-left: 0;
+}
+
+.mainContainer ul > li {
+  float: left;
+  /*background-color: yellow;*/
+  padding-right: 3rem;
+  margin-top: 2rem;
+}
+
+.mainContainer .icons {
+  width: 4rem;
+}
+
+.discoverContainer {
+  min-width: 100%;
+  height: 75vh;
+  margin-top: 8%;
+  padding-right: 0;
+  background-image: url(../images/background02.jpg);
+  background-size: 150vh;
+  /*border: 3px solid red;*/
+  margin-top: 14rem;
+  padding-bottom: 14rem;
+}
+
+.discoverContent {
+  width: 45%;
+  margin-left: 7rem;
+  margin-top: 9rem;
+  
+  float: right;
+  margin-right: 15%;
+  margin-left: 40%;
+}
+
+.discoverContent > span {
+  font-size: 1.5rem;
+  color: orange;
+  font-weight: bold;
+}
+
+.discoverContent h3 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.discoverContent p {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.discoverContent a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0.65rem 3rem 1.05rem 3rem;
+  background-color: orange;
+  font-size: 1.5rem;
+  margin-top: 10rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: white;
+}
+
+.discoverContent a + a {
+  background-color: rgb(241, 195, 109);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: -0.25rem;
+  width: 1rem;
+}
+
+.arrow {
+  width: 1.1rem;
+}
+
+.specialtyCuisineContainer {
+  min-width: 100%;
+  /*height: 75vh;*/
+  padding-right: 0;
+  background-image: url(../images/background03.jpg);
+  background-size: 150vh;
+  background-repeat: repeat-2; 
+  /*border: 3px solid red;*/
+  margin-top: -9rem;
+  padding-bottom: 4rem;
+}
+
+.specialtyCuisineContent {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 9rem;
+  padding-top: 9rem;
+  /*border:3px solid lime;*/
+  margin-right: 10%;
+  text-align: center;
+}
+
+.specialtyCuisineContent > span {
+  font-size: 1.5rem;
+  color: orange;
+  font-weight: bold;
+}
+
+.specialtyCuisineContent h2 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.specialtyCuisineContent nav {
+  /*border: 3px solid aqua;*/
+  border-bottom: 0.1rem solid lightgray;
+  margin: 0 auto;
+  height: 5rem;
+  padding-left: 4%;
+}
+
+.specialtyCuisineContent nav ul > li {
+  padding: 0 1.5rem;
+  font-size: 1.6rem;
+}
+
+.specialtyCuisineContent .breakfast {
+  color: orange;
+  padding-bottom: 1rem;
+  border-bottom: 1.5px solid orange;
+}
+
+.gallery {
+  border: 3px solid #ffa500;
+  height: 60vh;
+  min-width: 100%;
+  padding-left: 4.5%;
+  padding-right: 4.5%;
+  margin-left: 0;
+  margin-top: 4rem;
+}
+
+.gallery li {
+  float: left;
+}
+
+
+/*==================================
+  Little images in section 3
+==================================*/
+.imageIcon {
+  width: 16rem;
+  height: 18rem;
+  object-fit: cover;
+  /*border: 3px solid violet;*/
+  margin: 1rem 1rem;
+}
+
+.openingHoursContainer {
+  min-width: 100%;
+  height: 140vh;
+  padding-right: 0;
+  background-image: url(../images/background04.jpg);
+  background-size: 150vh;
+  /*border: 3px solid red;*/
+  margin-top: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.openingHoursContent {
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 4rem;
+  /*border:3px solid lime;*/
+  margin-right: 10%;
+  text-align: center;
+}
+
+.openingHoursContent > span {
+  font-size: 1.5rem;
+  color: orange;
+  font-weight: bold;
+}
+
+.openingHoursContent h2 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.phoneIcon {
+  width: 4rem;
+  margin-top: 1rem;
+}
+
+.openingHoursContent h5 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.phone {
+  font-size: 3rem;
+  color: orange;
+  font-weight: bold;
+}
+
+.hours li {
+  /*background-color: lime;*/
+  float: left;
+  width: 50%;
+  text-align: left;
+  padding-right: 0;
+  margin-right: 0;
+  margin-top: 0;
+}
+
+.hours li:last-child {
+  padding-left: 15%;
+  /*border: 1px solid red;*/
+}
+
+.hours  {
+  font-size: 2.5rem;
+}
+
+.video {
+  width: 90%;
+}
+
+.arrowIconRight, .arrowIconLeft {
+  width: 2rem;
+}
+
+div, .video {
+  float: left;
+}
+
+.arrowIconLeft {
+  transform: rotateY(180deg);
+}
+
+div {
+  /*border: 1px solid lime;*/
+  height: 60vh;
+  padding-top: 27%;
+  padding-right: 1.5%;
+}
+
+div:last-child {
+  /*border: 1px solid aqua;*/
+  height: 60vh;
+  padding-top: 27%;
+  padding-left: 1.5%;
+}
