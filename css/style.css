@@ -513,7 +513,7 @@ input::placeholder {
   color: gray;
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 390px) {
 
   html {
     background: aqua;
@@ -532,10 +532,14 @@ input::placeholder {
 
   .mainContainer {
     border: 3px solid lime;
-    width: 65%;
-    margin-left: 7rem;
+    width: 100%;
+    margin-left: 1.5rem;
     margin-top: 3rem;
     margin-bottom: -3.4rem;
+  }
+
+  .mainContainer h1 {
+    font-size: 5rem;
   }
 
   .mainContainer input {
@@ -567,6 +571,7 @@ input::placeholder {
   .mainContainer ul > li {
     background-color: yellow;
     padding-right: 2.5rem;
+    margin-right: 1.5rem;
     margin-top: 2rem;
   }
 
@@ -584,9 +589,9 @@ input::placeholder {
 
   .discoverContent {
     clear: both;
-    width: 80%;
+    width: 100%;
     margin-top: 2rem;
-    margin-right: 10%;
+    margin-right: 0%;
     border: 3px solid lime;
   }
 
@@ -595,8 +600,8 @@ input::placeholder {
   }
 
   .discoverContent span {
-    padding-left: 39%;
-    padding-right: 39%;
+    padding-left: 37%;
+    padding-right: 37%;
 
   }
   .discoverContent p {
@@ -606,18 +611,30 @@ input::placeholder {
     padding: 0.9rem;
 }
 
+#discoverButtonContainer div {
+  clear: both;
+  text-align: center;
+  /*background-color: red;*/
+  z-index: 2;
+  height: 4rem;
+  width: 100%;
+  padding-left: 50%;
+  padding-right: 20%;
+  margin-top: 6rem;
+}
+
 .discoverContent a {
-  padding: 0.65rem 4.38rem 1.05rem 4.38rem;
+padding: 0.65rem 3.95rem 1.05rem 3.9rem;
 }
 
 .discoverContent a + a {
-  background-color: rgb(241, 195, 109);
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin-left: -0.25rem;
-  width: 1rem;
+background-color: rgb(241, 195, 109);
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+border-top-left-radius: 0;
+border-bottom-left-radius: 0;
+margin-left: -0.25rem;
+width: 1rem;
 }
 
 .specialtyCuisineContainer {
@@ -627,8 +644,8 @@ input::placeholder {
 }
 
 .specialtyCuisineContent {
-  width: 80%;
-  margin-left: 10%;
+  width: 100%;
+  margin-left: 0%;
   margin-top: 9rem;
   padding-top: 3rem;
   border:3px solid lime;
@@ -640,8 +657,8 @@ input::placeholder {
 }
 
 .gallery {
-  padding-left: 19%;
-  padding-right: 19%;
+  padding-left: 17%;
+  padding-right: 17%;
   margin-left: 0;
   margin-top: 4rem;
 }
@@ -687,6 +704,18 @@ input::placeholder {
 div .arrowIconLeft, div .arrowIconRight {
   border: 0.5px solid lime;
   padding-top: 30%;
+  
+}
+
+.arrowIconLeft, .arrowIconRight {
+  display: none;
+  background-color: yellow;
+}
+
+.video {
+  padding: 0;
+  margin: 3rem 0;
+  width: 100%;
 }
 
 .customerSayContainer {
@@ -712,11 +741,15 @@ div .arrowIconLeft, div .arrowIconRight {
   padding-top: -10rem;
 }
 
+.customerSayContent h2 {
+  margin-top: 6rem;
+}
+
 .starReview {
   position: absolute;
   width: 12rem;
   margin-top: 0;
-  left: 32%;
+  left: 26%;
   z-index: 2;
   top: 8rem;
   border: 1px solid aqua;
@@ -757,7 +790,7 @@ div .arrowIconLeft, div .arrowIconRight {
 
 }
 
-@media (min-width: 401px) and (max-width: 768px) {
+@media (min-width: 391px) and (max-width: 768px) {
 
   html {
     background: aqua;
