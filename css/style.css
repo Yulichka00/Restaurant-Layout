@@ -513,7 +513,7 @@ input::placeholder {
   color: gray;
 }
 
-@media all and (max-width: 376px) {
+@media all and (max-width: 320px) {
 
   html {
     /*background: aqua;*/
@@ -724,7 +724,7 @@ div .arrowIconLeft, div .arrowIconRight {
 
 .arrowIconLeft, .arrowIconRight {
   display: none;
-  background-color: yellow;
+  /*background-color: yellow;*/
 }
 
 .video {
@@ -767,7 +767,7 @@ div .arrowIconLeft, div .arrowIconRight {
   left: 26%;
   z-index: 2;
   top: 8rem;
-  border: 1px solid aqua;
+  /*border: 1px solid aqua;*/
 }
 
 .quotations {
@@ -1775,7 +1775,7 @@ div .arrowIconLeft, div .arrowIconRight {
     margin-left: 0%;
     margin-top: 9rem;
     padding-top: 9rem;
-    border:3px solid lime;
+    /*border:3px solid lime;*/
     margin-right: 10%;
     text-align: center;
   }
