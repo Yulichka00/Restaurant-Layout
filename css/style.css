@@ -23,12 +23,9 @@
 
 html {
   font-size: 62.5%;
-  background-image: url(../images/backgroundLarge.png);
-  /*background: linear-gradient(to bottom, transparent, rgb(250, 248, 2480)),
-    url(../images/backgroundLarge.png);*/
+ /* background-image: url(../images/backgroundLarge.png);*/
   background-size: 260vh;
   background-repeat: no-repeat; 
-  /*background-color: rgb(243, 249, 252);*/
   background-color: rgb(242, 248, 251);
   opacity: 0.9;
   z-index: -1;
@@ -36,7 +33,7 @@ html {
 
 
 header {
-  padding: 0;
+  padding-right: 5%;
   margin: 0;
   margin-right: 0;
 }
@@ -47,7 +44,6 @@ header {
 
 .websiteContainer {
   width: 70%;
-  /*width: 112rem;*/
   height: 75vh;
   margin-left: 15%;
   margin-right: 15%;
@@ -58,7 +54,6 @@ header {
   background-image: url(../images/backgroundMedium.jpg);
   background-repeat: no-repeat;
   background-size: 150vh;
-
 }
 
 .menu {
@@ -66,19 +61,20 @@ header {
   visibility: hidden;
 }
 
-nav {
-  width: 66%;
+.websiteContainer nav {
   min-width: 66rem;
-  /*border: 1px solid red;*/
+  border: 1px solid red;
   height: 3rem;
-  margin-left: 34%;
- 
-  padding-top: 1rem;
+  margin-left: 33%;
+  padding-right: 1%;
+  margin-right: 40%;
+  padding-top: rem;
 }
 
-nav ul > li  {
+.websiteContainer nav ul > li  {
   float:left;
   padding-right: 3rem;
+  padding-right: 5%;
   font-size: 1.6rem;
 }
 
@@ -249,17 +245,26 @@ input::placeholder {
 }
 
 .specialtyCuisineContent nav {
-  /*border: 3px solid aqua;*/
+  border: 3px solid aqua;
   /*border-bottom: 0.1rem solid lightgray;*/
+  box-sizing: border-box;
   margin: 0 auto;
   height: 5rem;
-  padding-left: 12%;
+  padding-left: 19%;
+  padding-right: 19%;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  min-width: 65%;
+
   
 }
 
 .specialtyCuisineContent nav ul > li {
   padding: 0 1.5rem;
   font-size: 1.6rem;
+  border: 1px solid red;
+  /*width: 20%;*/
 }
 
 .specialtyCuisineContent .breakfast {
@@ -364,32 +369,59 @@ input::placeholder {
 .hours  {
   font-size: 2.5rem;
   background-color: yellow;
+  margin-bottom: 5rem;
 }
 
-.video {
-  width: 90%;
+.arrowsImageContainer {
+  border: 1px solid red;
+  width: 100%;
+  min-width: 90%;
+  height: 80vh;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.arrowIconLeft, .video, .arrowIconRight {
+  float: left;
+  width: 5%;
+  margin: 0;
+}
+
+.arrowDirections {
+  background-color: yellow;
 }
 
 .arrowIconRight, .arrowIconLeft {
   width: 2rem;
-}
-
-div, .video {
-  float: left;
+  /*padding: 25% 1rem;*/
+  margin-top: 25%;
+  border: 1px solid aqua;
 }
 
 .arrowIconLeft {
   transform: rotateY(180deg);
 }
 
-div {
+.video {
+  width: 82%;
+  height: 90;
+  object-fit: cover;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 4%;
+ 
+
+}
+
+
+.arrowDirections div {
   /*border: 1px solid lime;*/
   height: 60vh;
   padding-top: 27%;
-  padding-right: 1.5%;
+  /*padding-right: 1.5%;*/
 }
 
-div:last-child {
+.arrowDirections div:last-child {
   /*border: 1px solid aqua;*/
   height: 60vh;
   padding-top: 27%;
@@ -481,7 +513,11 @@ div:last-child {
   color: gray;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 400px) {
+
+  html {
+    background: aqua;
+  }
 
   nav {
     display: none;
@@ -495,7 +531,7 @@ div:last-child {
   }
 
   .mainContainer {
-    /*border: 3px solid lime;*/
+    border: 3px solid lime;
     width: 65%;
     margin-left: 7rem;
     margin-top: 3rem;
@@ -529,7 +565,7 @@ div:last-child {
   }
 
   .mainContainer ul > li {
-    /*background-color: yellow;*/
+    background-color: yellow;
     padding-right: 2.5rem;
     margin-top: 2rem;
   }
@@ -540,7 +576,7 @@ div:last-child {
     background-image: url(../images/background02.jpg);
     background-size: 150vh;
     background-repeat: no-repeat;
-    /*border: 3px solid red;*/
+    border: 3px solid red;
     margin-top: 10rem;
     padding-bottom: 14rem;
     justify-content: center;
@@ -551,7 +587,7 @@ div:last-child {
     width: 80%;
     margin-top: 2rem;
     margin-right: 10%;
-    /*border: 3px solid lime;*/
+    border: 3px solid lime;
   }
 
   .discoverContent h3 {
@@ -595,7 +631,7 @@ div:last-child {
   margin-left: 10%;
   margin-top: 9rem;
   padding-top: 3rem;
-  /*border:3px solid lime;*/
+  border:3px solid lime;
   margin-right: 10%;
 }
 
@@ -612,7 +648,7 @@ div:last-child {
 
 .openingHoursContainer {
   height: 108vh;
-  /*border: 3px solid red;*/
+  border: 3px solid red;
   margin-top: 3rem;
 }
 
@@ -623,7 +659,7 @@ div:last-child {
 }
 
 .hours li {
-  /*border: 1px solid lime;*/
+  border: 1px solid lime;
   width: 50%;
   text-align: left;
   padding-right: 0;
@@ -635,7 +671,7 @@ div:last-child {
 .hours li:last-child {
   padding-left: 0;
   padding: 0.5rem 1rem;
-  /*border: 1px solid red;*/
+  border: 1px solid red;
 }
 
 .hours  {
@@ -649,7 +685,7 @@ div:last-child {
 }
 
 div .arrowIconLeft, div .arrowIconRight {
-  /*border: 0.5px solid lime;*/
+  border: 0.5px solid lime;
   padding-top: 30%;
 }
 
@@ -659,7 +695,7 @@ div .arrowIconLeft, div .arrowIconRight {
   background-image: url(../images/background05.jpg);
   background-repeat: no-repeat;
   background-size: 150vh;
-  /*border: 3px solid red;*/
+  border: 3px solid red;
   margin-top: 0;
   padding-top: 0;
   padding-bottom: 4rem;
@@ -670,7 +706,7 @@ div .arrowIconLeft, div .arrowIconRight {
 .customerSayContent {
   width: 98%;
   margin-left: 1%;
-  /*border:3px solid lime;*/
+  border:3px solid lime;
   margin-right: 1%;
   margin-top: 0rem;
   padding-top: -10rem;
@@ -683,7 +719,7 @@ div .arrowIconLeft, div .arrowIconRight {
   left: 32%;
   z-index: 2;
   top: 8rem;
-  /*border: 1px solid aqua;*/
+  border: 1px solid aqua;
 }
 
 .quotations {
@@ -719,4 +755,1262 @@ div .arrowIconLeft, div .arrowIconRight {
    margin-bottom: 0.5rem;
  }
 
+}
+
+@media (min-width: 401px) and (max-width: 768px) {
+
+  html {
+    background: aqua;
+  }
+
+  nav {
+    display: none;
+ 
+  }
+
+  .menu {
+    visibility: visible;
+    width: 6rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    border: 1px solid red;
+  }
+
+  .mainContainer {
+    /*border: 3px solid lime;*/
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 3rem;
+    margin-bottom: 8rem;
+    text-align: center;
+  }
+
+  .mainContainer input {
+    height: 3.5rem;
+    width: 23rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 2rem;
+    
+  }
+
+  .mainContainer a {
+    text-decoration: none;
+    height: 3.5rem;
+    width: 23rem;
+    padding: 0.65rem 8.8rem 1.05rem 8.8rem;
+    margin-left: -0rem;
+    background-color: orange;
+    font-size: 1.5rem;
+    margin-top: 10rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: white;
+  }
+
+ .mediaIcons {
+    width: 100%;
+    margin-left: 15%;
+  }
+
+  .mainContainer ul > li {
+    padding-right: 2.5rem;
+    margin-top: 2rem;    
+  }
+
+  .discoverContainer {
+    clear: both;
+    padding-right: 0;
+    padding-left: 5%;
+    background-image: url(../images/background02.jpg);
+    background-size: 150vh;
+    background-repeat: no-repeat;
+    margin-top: 0rem;
+    padding-bottom: 16rem;
+    justify-content: center;
+    
+  }
+
+  .discoverContent {
+    clear: both;
+    width: 86%;
+    height: 100%;
+    margin-top: 1rem;
+    margin-right: 10%;
+    border: 3px solid lime;
+  }
+
+  .discoverContent h3 {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .discoverContent span {
+    padding-left: 39%;
+    padding-right: 39%;
+
+  }
+  .discoverContent p {
+    background-color: rgb(226, 235, 235);
+    border-radius: 5px;
+    /*margin-bottom: 2.5rem;*/
+    padding: 0.9rem;
+}
+
+#discoverButtonContainer div {
+    clear: both;
+    text-align: center;
+    /*background-color: red;*/
+    z-index: 2;
+    height: 4rem;
+    width: 60%;
+    padding-left: 50%;
+    padding-right: 20%;
+    margin-top: 6rem;
+}
+
+.discoverContent a {
+  padding: 0.65rem 4.2rem 1.05rem 4.2rem;
+}
+
+.discoverContent a + a {
+  background-color: rgb(241, 195, 109);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: -0.25rem;
+  width: 1rem;
+}
+
+.specialtyCuisineContainer {
+  padding-right: 0;
+  padding-bottom: 4rem;
+  justify-content: center;
+}
+
+.specialtyCuisineContent {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 9rem;
+  padding-top: 3rem;
+  /*border:3px solid lime;*/
+  margin-right: 10%;
+}
+
+.gallery li {
+  clear: left;
+  width: 55%;
+  margin-left: 16.5%;
+  margin-right: 16.5%;
+  /*border: 3px solid red;*/
+}
+
+.gallery {
+  clear: left;
+  width: 5%;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.openingHoursContainer {
+  height: 108vh;
+  margin-top: 3rem;
+}
+
+.hours {
+  /*margin-left: -4rem;*/
+  /*border: 3px solid red;*/
+  height: 5rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.hours li {
+  /*border: 1px solid lime;*/
+  width: 35%;
+  text-align: left;
+  margin: 0 5%;
+  box-sizing: border-box;
+}
+
+.hours li:last-child {
+  padding-left: 0;
+}
+
+.hours  {
+  font-size: 1.4rem;
+}
+
+.arrowsImageContainer {
+  border: 1px solid red;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  
+}
+
+.video {
+  margin-top: 3rem;
+  /*width: 81%;*/
+  width: 90%;
+}
+
+.arrowIconLeft, .arrowIconRight {
+  /*border: 0.5px solid lime;*/
+  padding-top: 30%;
+  display: none;
+}
+
+.customerSayContainer {
+  height: 95vh;
+  padding-right: 0;
+  background-image: url(../images/background05.jpg);
+  background-repeat: no-repeat;
+  background-size: 150vh;
+  /*border: 3px solid red;*/
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 4rem;
+
+  padding-top: -10rem;
+}
+
+.customerSayContent {
+  width: 98%;
+  margin-left: 1%;
+  /*border:3px solid lime;*/
+  margin-right: 1%;
+  margin-top: 0rem;
+  padding-top: -8rem;
+}
+
+.starReview {
+  position: absolute;
+  width: 12rem;
+  margin-top: 0;
+  left: 32%;
+  z-index: 2;
+  top: 8rem;
+  /*border: 1px solid aqua;*/
+}
+
+.quotations {
+  position: absolute;
+  transform: rotateX(180deg);
+  top: 3rem;
+  left: 20%;
+  z-index: 0;
+  opacity: 0.1;
+  width: 60%;
+  height: 20%;
+}
+
+.reviewPhoto {
+  margin-top: 0rem;
+}
+
+.customerSayContent h2 {
+  margin-top: 6rem;
+}
+
+.customerSayContent h4 {
+  margin-top: 3rem;
+}
+
+.customerSayContent h6 {
+  font-size: 1.4rem;
+  margin-top: 0rem;
+  color: gray;
+}
+
+.customerSayContent p {
+  margin-top: -2rem;
+  padding-top: 0rem;
+   font-size: 1.8rem;
+   line-height: 2.7rem;
+   margin-bottom: 0.5rem;
+ }
+
+}
+
+@media (min-width: 769px) and (max-width: 1060px) {
+  html {
+    background-color: pink;
+  }
+
+  header {
+    padding-right: 87%;
+    margin: 0;
+    margin-right: 0;
+  }
+
+  nav {
+    display: none;
+ 
+  }
+
+  .menu {
+    visibility: visible;
+    width: 6rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    border: 1px solid red;
+  }
+  
+  .navIcon {
+    width: 3rem;
+  }
+  
+  .websiteContainer {
+    width: 70%;
+    height: 77vh;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 8%;
+    margin-bottom: 0;
+    padding-bottom: 0rem;
+    padding-right: 0;
+
+  }
+  
+  .websiteContainer nav {
+    min-width: 66rem;
+    border: 1px solid red;
+    height: 3rem;
+    margin-left: 33%;
+    padding-right: 1%;
+    margin-right: 30%;
+    padding-top: rem;
+  }
+  
+  .websiteContainer nav ul > li  {
+    float:left;
+    padding-right: 3rem;
+    padding-right: 5%;
+    font-size: 1.6rem;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  .mainContainer {
+    /*border: 3px solid lime;*/
+    width: 50%;
+    margin-left: 7rem;
+    margin-top: 9rem;
+  }
+  
+  .mainContainer h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .mainContainer form {
+    margin-top: 0;
+  }
+  
+  .icon {
+    padding-left: 2.5rem;
+    background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+    background-size: 2rem;
+    
+  }
+
+  .mainContainer input {
+    height: 3.5rem;
+    width: 30rem;
+    background-color: white;
+    border: 0.1rem solid lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 2rem;
+  }
+  
+  input::placeholder {
+    font-size: 1.5rem;
+    
+  }
+  
+  .mainContainer a {
+    text-decoration: none;
+    padding: 0.65rem 12.3rem 1.05rem 12.3rem;
+    margin-left: 0.14rem;
+    font-size: 1.5rem;
+    margin-top: 10rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .mainContainer ul {
+    padding-left: 0;
+   
+  }
+  
+  .mainContainer ul > li {
+    float: left;
+    /*background-color: yellow;*/
+    padding-right: 3rem;
+    margin-top: 2rem;
+ 
+  }
+  
+  /* screen: pink */
+  .discoverContainer {
+    min-width: 100%;
+    height: 90vh;
+    padding-right: 0;
+    /*border: 3px solid red;*/
+    margin-top: 6rem;
+    padding-bottom: 14rem;
+  }
+  
+  .discoverContent {
+    width: 45%;
+    margin-top: 2rem;
+    float: right;
+    margin-right: 5%;
+    margin-left: 45%;
+    border: 1px solid red;
+  }
+  
+  .discoverContent > span {
+    font-size: 1.5rem;
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .discoverContent h3 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .discoverContent p {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .discoverContent a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 0.65rem 3rem 1.05rem 3rem;
+    background-color: orange;
+    font-size: 1.5rem;
+    margin-top: 10rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: white;
+  }
+  
+  .discoverContent a + a {
+    background-color: rgb(241, 195, 109);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -0.25rem;
+    width: 1rem;
+  }
+  
+  .arrow {
+    width: 1.1rem;
+  }
+  
+  .specialtyCuisineContainer {
+    min-width: 100%;
+    /*height: 75vh;*/
+    padding-right: 0;
+    border: 3px solid blue;
+    margin-top: -6rem;
+    padding-bottom: 4rem;
+  }
+  
+  .specialtyCuisineContent {
+    width: 100%;
+    height: 170vh;
+    margin-left: 0%;
+    margin-top: 0rem;
+    padding-top: 9rem;
+    border:3px solid lime;
+    margin-right: 0%;
+    text-align: center;
+  }
+  
+  .specialtyCuisineContent > span {
+    font-size: 1.5rem;
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .specialtyCuisineContent h2 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .specialtyCuisineContent nav {
+    border: 3px solid aqua;
+    /*border-bottom: 0.1rem solid lightgray;*/
+    box-sizing: border-box;
+    margin: 0 auto;
+    height: 5rem;
+    padding-left: 5%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    min-width: 65%;
+
+  }
+  
+  .specialtyCuisineContent nav ul > li {
+    padding: 0 1.5rem;
+    font-size: 1.6rem;
+    border: 1px solid red;
+    
+  }
+  
+  .specialtyCuisineContent .breakfast {
+    color: orange;
+    padding-bottom: 1rem;
+    border-bottom: 1.5px solid orange;
+  }
+
+  .gallery li {
+    float: left;
+  }
+  
+  .gallery {
+    height: 115vh;
+    /*min-width: 100%;*/
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-left: 0;
+    margin-top: 5rem;
+    border: 1px solid red;
+    text-align: center;
+  }
+
+    .specialtyCuisineContent img {
+    clear: both;
+    margin-top: 1rem;
+  }
+ 
+  /*==================================
+    Little images in section 3
+  ==================================*/
+  .imageIcon {
+    width: 16rem;
+    height: 18rem;
+    object-fit: cover;
+    border: 3px solid violet;
+    margin: 1rem 1rem;
+  }
+  
+  .openingHoursContainer {
+    min-width: 100%;
+    height: 118vh;
+    padding-right: 0;
+    /*border: 3px solid red;*/
+    margin-top: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+  
+  .openingHoursContent {
+    width: 100%;
+    margin-left: 0%;
+    padding-top: 4rem;
+    border:3px solid lime;
+    margin-right: 10%;
+    text-align: center;
+  }
+  
+  .openingHoursContent > span {
+    font-size: 1.5rem;
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .openingHoursContent h2 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .phoneIcon {
+    width: 4rem;
+    margin-top: 1rem;
+  }
+  
+  .openingHoursContent h5 {
+    font-size: 1.5rem;
+    margin: 0;
+    
+  }
+  
+  .phone {
+    font-size: 3rem;
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .hours li {
+    /*background-color: lime;*/
+    float: left;
+    width: 50%;
+    text-align: left;
+    padding-right: 0;
+    margin-right: 0;
+    margin-top: 0;
+    
+  }
+  
+  .hours li:last-child {
+    padding-left: 15%;
+    /*border: 1px solid red;*/
+  }
+  
+  .hours  {
+    font-size: 1.5rem;
+    background-color: yellow;
+    margin-bottom: 5rem;
+  }
+  
+  .arrowsImageContainer {
+    border: 1px solid red;
+    width: 100%;
+    min-width: 90%;
+    height: 80vh;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  
+  .arrowIconLeft, .video, .arrowIconRight {
+    float: left;
+    width: 5%;
+    margin: 0;
+  }
+  
+  .arrowDirections {
+    background-color: yellow;
+  }
+  
+  .arrowIconRight, .arrowIconLeft {
+    width: 2rem;
+    /*padding: 25% 1rem;*/
+    margin-top: 25%;
+    border: 1px solid aqua;
+  }
+  
+  .arrowIconLeft {
+    transform: rotateY(180deg);
+  }
+  
+  .video {
+    width: 82%;
+    height: 90;
+    object-fit: cover;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 4%;
+  }
+  
+  .arrowDirections div {
+    /*border: 1px solid lime;*/
+    height: 60vh;
+    padding-top: 27%;
+    /*padding-right: 1.5%;*/
+  }
+  
+  .arrowDirections div:last-child {
+    /*border: 1px solid aqua;*/
+    height: 60vh;
+    padding-top: 27%;
+    padding-left: 1.5%;
+  }
+  
+  .customerSayContainer {
+    min-width: 100%;
+    height: 95vh;
+    padding-right: 0;
+    background-image: url(../images/background05.jpg);
+    background-repeat: no-repeat;
+    background-size: 150vh;
+    /*border: 3px solid red;*/
+    margin-top: -1.5rem;
+    padding-top: 0rem;
+    padding-bottom: 4rem;
+    margin-bottom: -4rem;
+  }
+  
+  .customerSayContent {
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 4rem;
+    /*border:3px solid lime;*/
+    margin-right: 10%;
+    text-align: center;
+  }
+  
+  .customerSayContent > span {
+    font-size: 1.5rem;
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .customerSayContent h2 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .reviewPhoto {
+    width: 9rem;
+    margin-top: 1rem;
+  }
+  
+  .customerSayContent h4 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .customerSayContent h6 {
+    font-size: 1.4rem;
+    margin-top: 0rem;
+    color: gray;
+  }
+  
+  .starReview {
+    position: absolute;
+    width: 12rem;
+    margin-top: 0;
+    left: 36%;
+    z-index: 2;
+    top: 32.5rem;
+  }
+  
+  .quotations {
+    position: absolute;
+    transform: rotateX(180deg);
+    top: 27rem;
+    left: 40%;
+    z-index: 0;
+    opacity: 0.1;
+    width: 20%;
+    height: 28%;
+  }
+  
+  .customerSayContent h6 {
+    font-size: 1.4 rem;
+  }
+  
+  .customerSayContent p {
+   padding-top: 3rem;
+    font-size: 2rem;
+    line-height: 4rem;
+    font-style: italic;
+    color: gray;
+  }
+
+}
+
+@media (min-width: 1061px) and (max-width: 1400px) {
+  html {
+    background-color: yellow;
+  }
+
+  header {
+    padding-right: 50%;
+    margin: 0;
+    margin-right: 0;
+  }
+  
+  .navIcon {
+    width: 3rem;
+  }
+  
+  .websiteContainer {
+    width: 70%;
+    height: 75vh;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 8%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+
+  }
+  
+  .menu {
+    width: 3rem;
+    visibility: hidden;
+  }
+  
+  .websiteContainer nav {
+    min-width: 66rem;
+    border: 1px solid red;
+    height: 3rem;
+    margin-left: 33%;
+    padding-right: 1%;
+    margin-right: 30%;
+    padding-top: rem;
+  }
+  
+  .websiteContainer nav ul > li  {
+    float:left;
+    padding-right: 3rem;
+    padding-right: 5%;
+    font-size: 1.6rem;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  .mainContainer {
+    /*border: 3px solid lime;*/
+    width: 50%;
+    margin-left: 7rem;
+    margin-top: 9rem;
+  }
+  
+  .mainContainer h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .mainContainer form {
+    margin-top: 0;
+  }
+  
+  .icon {
+    padding-left: 2.5rem;
+    background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+    background-size: 2rem;
+    
+  }
+
+  .mainContainer input {
+    height: 3.5rem;
+    width: 30rem;
+    background-color: white;
+    border: 0.1rem solid lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 2rem;
+  }
+  
+  input::placeholder {
+    font-size: 1.5rem;
+    
+  }
+  
+  .mainContainer a {
+    text-decoration: none;
+    padding: 0.65rem 12.3rem 1.05rem 12.3rem;
+    margin-left: 0.14rem;
+    font-size: 1.5rem;
+    margin-top: 10rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .mainContainer ul {
+    padding-left: 0;
+  }
+  
+  .mainContainer ul > li {
+    float: left;
+    /*background-color: yellow;*/
+    padding-right: 3rem;
+    margin-top: 2rem;
+  }
+  
+  /* screen: 1400px */
+  .discoverContainer {
+    min-width: 100%;
+    height: 75vh;
+    padding-right: 0;
+    /*border: 3px solid red;*/
+    margin-top: 11rem;
+    padding-bottom: 14rem;
+  }
+  
+  .discoverContent {
+    width: 45%;
+    margin-left: 7rem;
+    margin-top: 9rem;
+    float: right;
+    margin-right: 10%;
+    margin-left: 40%;
+  }
+  
+  .discoverContent > span {
+    font-size: 1.5rem;
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .discoverContent h3 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .discoverContent p {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .discoverContent a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 0.65rem 3rem 1.05rem 3rem;
+    background-color: orange;
+    font-size: 1.5rem;
+    margin-top: 10rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: white;
+  }
+  
+  .discoverContent a + a {
+    background-color: rgb(241, 195, 109);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -0.25rem;
+    width: 1rem;
+  }
+  
+  .arrow {
+    width: 1.1rem;
+  }
+  
+  .specialtyCuisineContainer {
+    min-width: 100%;
+    /*height: 75vh;*/
+    margin: 0 auto;
+    padding-right: 0;
+    background-image: url(../images/background03.jpg);
+    background-size: 150vh;
+    background-repeat: repeat-2; 
+    /*border: 3px solid red;*/
+    margin-top: -9rem;
+    padding-bottom: 4rem;
+  }
+  
+  .specialtyCuisineContent {
+    width: 100%;
+    height: 170vh;
+    margin: 0 auto;
+    margin-left: 0%;
+    margin-top: 9rem;
+    padding-top: 9rem;
+    border:3px solid lime;
+    margin-right: 10%;
+    text-align: center;
+  }
+  
+  .specialtyCuisineContent > span {
+    font-size: 1.5rem;
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .specialtyCuisineContent h2 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .specialtyCuisineContent nav {
+    border: 3px solid aqua;
+    /*border-bottom: 0.1rem solid lightgray;*/
+    box-sizing: border-box;
+    margin: 0 auto;
+    height: 5rem;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    min-width: 65%;
+
+  }
+  
+  .specialtyCuisineContent nav ul > li {
+    padding: 0 1.5rem;
+    font-size: 1.6rem;
+    border: 1px solid red;
+    
+  }
+  
+  .specialtyCuisineContent .breakfast {
+    color: orange;
+    padding-bottom: 1rem;
+    border-bottom: 1.5px solid orange;
+  }
+
+  .gallery li {
+    float: left;
+  }
+  
+  .gallery {
+    height: 115vh;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-left: 0;
+    margin-top: 5rem;
+    border: 1px solid red;
+    text-align: center;
+  }
+
+    .specialtyCuisineContent img {
+    clear: both;
+    margin-top: 1rem;
+  }
+ 
+  /*==================================
+    Little images in section 3
+  ==================================*/
+  .imageIcon {
+    width: 16rem;
+    height: 18rem;
+    object-fit: cover;
+    border: 3px solid violet;
+    margin: 1rem 1rem;
+  }
+  
+  .openingHoursContainer {
+    min-width: 100%;
+    height: 138vh;
+    padding-right: 0;
+    background-image: url(../images/background04.jpg);
+    background-repeat: no-repeat;
+    background-size: 150vh;
+    /*border: 3px solid red;*/
+    margin-top: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+  
+  .openingHoursContent {
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 4rem;
+    /*border:3px solid lime;*/
+    margin-right: 10%;
+    text-align: center;
+  }
+  
+  .openingHoursContent > span {
+    font-size: 1.5rem;
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .openingHoursContent h2 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .phoneIcon {
+    width: 4rem;
+    margin-top: 1rem;
+  }
+  
+  .openingHoursContent h5 {
+    font-size: 1.5rem;
+    margin: 0;
+    
+  }
+  
+  .phone {
+    font-size: 3rem;
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .hours li {
+    /*background-color: lime;*/
+    float: left;
+    width: 50%;
+    text-align: left;
+    padding-right: 0;
+    margin-right: 0;
+    margin-top: 0;
+    
+  }
+  
+  .hours li:last-child {
+    padding-left: 15%;
+    /*border: 1px solid red;*/
+  }
+  
+  .hours  {
+    font-size: 2.5rem;
+    background-color: yellow;
+    margin-bottom: 5rem;
+  }
+  
+  .arrowsImageContainer {
+    border: 1px solid red;
+    width: 100%;
+    min-width: 90%;
+    height: 80vh;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .arrowIconLeft, .video, .arrowIconRight {
+    float: left;
+    width: 5%;
+    margin: 0;
+  }
+  
+  .arrowDirections {
+    background-color: yellow;
+  }
+  
+  .arrowIconRight, .arrowIconLeft {
+    width: 2rem;
+    /*padding: 25% 1rem;*/
+    margin-top: 25%;
+    border: 1px solid aqua;
+  }
+  
+  .arrowIconLeft {
+    transform: rotateY(180deg);
+  }
+  
+  .video {
+    width: 82%;
+    height: 90;
+    object-fit: cover;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 4%;
+  }
+  
+  .arrowDirections div {
+    /*border: 1px solid lime;*/
+    height: 60vh;
+    padding-top: 27%;
+    /*padding-right: 1.5%;*/
+  }
+  
+  .arrowDirections div:last-child {
+    /*border: 1px solid aqua;*/
+    height: 60vh;
+    padding-top: 27%;
+    padding-left: 1.5%;
+  }
+  
+  .customerSayContainer {
+    min-width: 100%;
+    height: 95vh;
+    padding-right: 0;
+    background-image: url(../images/background05.jpg);
+    background-repeat: no-repeat;
+    background-size: 150vh;
+    /*border: 3px solid red;*/
+    margin-top: 0rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    margin-bottom: -4rem;
+  }
+  
+  .customerSayContent {
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 4rem;
+    /*border:3px solid lime;*/
+    margin-right: 10%;
+    text-align: center;
+  }
+  
+  .customerSayContent > span {
+    font-size: 1.5rem;
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .customerSayContent h2 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .reviewPhoto {
+    width: 9rem;
+    margin-top: 1rem;
+  }
+  
+  .customerSayContent h4 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .customerSayContent h6 {
+    font-size: 1.4rem;
+    margin-top: 0rem;
+    color: gray;
+  }
+  
+  .starReview {
+    position: absolute;
+    width: 12rem;
+    margin-top: 0;
+    left: 42%;
+    z-index: 2;
+    top: 32.5rem;
+  }
+  
+  .quotations {
+    position: absolute;
+    transform: rotateX(180deg);
+    top: 27rem;
+    left: 40%;
+    z-index: 0;
+    opacity: 0.1;
+    width: 20%;
+    height: 28%;
+  }
+  
+  .customerSayContent h6 {
+    font-size: 1.4 rem;
+  }
+  
+  .customerSayContent p {
+   padding-top: 3rem;
+    font-size: 2rem;
+    line-height: 4rem;
+    font-style: italic;
+    color: gray;
+  }
+  
 }
